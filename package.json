@@ -1,0 +1,19 @@
+{
+  "name": "pdp-evidence-scripts",
+  "version": "0.1.0",
+  "description": "Read-only evidence scripts for Filecoin Onchain Cloud (PDP) on Calibration: proof status and independent HTTPS retrieval over IPv4/IPv6.",
+  "license": "MIT OR Apache-2.0",
+  "type": "module",
+  "private": true,
+  "engines": {
+    "node": ">=20"
+  },
+  "scripts": {
+    "proof-status": "node proof-status.mjs",
+    "retrieval-check": "node retrieval-check.mjs"
+  },
+  "dependencies": {
+    "@filoz/synapse-core": "0.10.3",
+    "viem": "2.57.16"
+  }
+}

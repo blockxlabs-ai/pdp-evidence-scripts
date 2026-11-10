@@ -1,0 +1,61 @@
+{
+  "tool": "retrieval-check.mjs",
+  "at": "2026-11-10T15:54:39.625Z",
+  "providerId": "61",
+  "serviceURL": "https://pdp.stax-infra.com",
+  "pieceCid": "bafkzcibey3jsseakztwunihqjay2hefffyjjyl2akvqqxy2eje2kh234rb7quz2kaa",
+  "expectedSha256": null,
+  "results": [
+    {
+      "family": 4,
+      "ok": true,
+      "hops": [
+        {
+          "status": 301,
+          "url": "https://pdp.stax-infra.com/piece/bafkzcibey3jsseakztwunihqjay2hefffyjjyl2akvqqxy2eje2kh234rb7quz2kaa"
+        },
+        {
+          "status": 200,
+          "url": "https://pdp.stax-infra.com/public/bafkzcibey3jsseakztwunihqjay2hefffyjjyl2akvqqxy2eje2kh234rb7quz2kaa"
+        }
+      ],
+      "bytes": 1398330,
+      "contentLengthMatches": null,
+      "sha256": "4c11ef7962fc8ac7245233149afe308377419ec0f3bffeeb54737dc11ef67f95",
+      "matchesExpected": null,
+      "ms": 68,
+      "socketFamily": "IPv4"
+    },
+    {
+      "family": 6,
+      "ok": true,
+      "hops": [
+        {
+          "status": 301,
+          "url": "https://pdp.stax-infra.com/piece/bafkzcibey3jsseakztwunihqjay2hefffyjjyl2akvqqxy2eje2kh234rb7quz2kaa"
+        },
+        {
+          "status": 200,
+          "url": "https://pdp.stax-infra.com/public/bafkzcibey3jsseakztwunihqjay2hefffyjjyl2akvqqxy2eje2kh234rb7quz2kaa"
+        }
+      ],
+      "bytes": 1398330,
+      "contentLengthMatches": null,
+      "sha256": "4c11ef7962fc8ac7245233149afe308377419ec0f3bffeeb54737dc11ef67f95",
+      "matchesExpected": null,
+      "ms": 64,
+      "socketFamily": "IPv6"
+    }
+  ],
+  "summary": {
+    "allFamiliesOk": true,
+    "familiesAgree": true,
+    "allMatchExpected": null
+  },
+  "doesNotProve": [
+    "That the provider holds the data on-chain or is being proven (use proof-status.mjs for that).",
+    "That the PieceCID matches the bytes: this script compares sha256 only, it does not recompute the PieceCID.",
+    "Anything about retrievability at another time, from another network location, or via other paths (CDN, IPFS).",
+    "That a matching sha256 means the original was intact, unless the expected digest came from the original data."
+  ]
+}

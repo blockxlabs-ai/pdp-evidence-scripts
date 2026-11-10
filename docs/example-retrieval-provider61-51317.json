@@ -1,0 +1,61 @@
+{
+  "tool": "retrieval-check.mjs",
+  "at": "2026-11-10T15:54:27.093Z",
+  "providerId": "61",
+  "serviceURL": "https://pdp.stax-infra.com",
+  "pieceCid": "bafkzcibfqcapyaisdl5zlgxkzcyjprd53ruz7zf2coe37mh6gurcatz7deudz5hl7mqa",
+  "expectedSha256": "7c197fec20e01450fbe336750397274e2c21c43b8c7f66be0a0a6edebef692db",
+  "results": [
+    {
+      "family": 4,
+      "ok": true,
+      "hops": [
+        {
+          "status": 301,
+          "url": "https://pdp.stax-infra.com/piece/bafkzcibfqcapyaisdl5zlgxkzcyjprd53ruz7zf2coe37mh6gurcatz7deudz5hl7mqa"
+        },
+        {
+          "status": 200,
+          "url": "https://pdp.stax-infra.com/public/bafkzcibfqcapyaisdl5zlgxkzcyjprd53ruz7zf2coe37mh6gurcatz7deudz5hl7mqa"
+        }
+      ],
+      "bytes": 4194304,
+      "contentLengthMatches": null,
+      "sha256": "7c197fec20e01450fbe336750397274e2c21c43b8c7f66be0a0a6edebef692db",
+      "matchesExpected": true,
+      "ms": 173,
+      "socketFamily": "IPv4"
+    },
+    {
+      "family": 6,
+      "ok": true,
+      "hops": [
+        {
+          "status": 301,
+          "url": "https://pdp.stax-infra.com/piece/bafkzcibfqcapyaisdl5zlgxkzcyjprd53ruz7zf2coe37mh6gurcatz7deudz5hl7mqa"
+        },
+        {
+          "status": 200,
+          "url": "https://pdp.stax-infra.com/public/bafkzcibfqcapyaisdl5zlgxkzcyjprd53ruz7zf2coe37mh6gurcatz7deudz5hl7mqa"
+        }
+      ],
+      "bytes": 4194304,
+      "contentLengthMatches": null,
+      "sha256": "7c197fec20e01450fbe336750397274e2c21c43b8c7f66be0a0a6edebef692db",
+      "matchesExpected": true,
+      "ms": 155,
+      "socketFamily": "IPv6"
+    }
+  ],
+  "summary": {
+    "allFamiliesOk": true,
+    "familiesAgree": true,
+    "allMatchExpected": true
+  },
+  "doesNotProve": [
+    "That the provider holds the data on-chain or is being proven (use proof-status.mjs for that).",
+    "That the PieceCID matches the bytes: this script compares sha256 only, it does not recompute the PieceCID.",
+    "Anything about retrievability at another time, from another network location, or via other paths (CDN, IPFS).",
+    "That a matching sha256 means the original was intact, unless the expected digest came from the original data."
+  ]
+}
